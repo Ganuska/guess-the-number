@@ -20,10 +20,9 @@ const setInputValue = () => {
     : input > randomNum
     ? ((result.innerHTML = "izabrali ste veci broj"), (numOfTry += 1))
     : input == randomNum
-    ? ((result.innerHTML = `bravo!!! broj pokusaja ${numOfTry} <button onClick="reset()" class="btn" >reset</button> `),
+    ? ((result.innerHTML = `bravo!!! broj pokusaja ${numOfTry} <br> <br> <button onClick="reset()" class="btn" >reset</button> `),
       (btn.disabled = true))
     : ((result.innerHTML = "izabrali ste manji broj"), (numOfTry += 1));
 
   tryNumber.innerHTML = `broj pokusaja : ${numOfTry}`;
 };
-console.log(randomNum);
