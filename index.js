@@ -6,7 +6,7 @@ const btn = document.getElementById("btn");
 const randomNum = Math.floor(Math.random() * 100);
 
 let numOfTry = 0;
-randomNumHtml.innerHTML = `zamislio sam jedan broj manji od 100`;
+randomNumHtml.innerHTML = `zamislio sam jedan broj manji od 100 <br> probajte ga pogoditi`;
 
 const reset = () => {
   location.reload();
